@@ -8,3 +8,4 @@
 ## Contenidos
 
 - [Requisitos de Gobernabilidad e Integración de Sistemas del DCC](REQUISITOS_GOBERNABILIDAD.md)
+- [Checklist de Entrega para Sistemas Desarrollados por Estudiantes](CHECKLIST_ENTREGA.md)
