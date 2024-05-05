@@ -5,7 +5,7 @@
 |Autor|Descripción|Fecha|
 |---|---|---|
 |jarriagada@dcc.uchile.cl|Se incorpora documentación de requisitos de gobernabilidad e integración de sistemas del DCC|27/03/2023|
-|jarriagada@dcc.uchile.cl|Se el checklist de entrega para sistemas desarrollados por estudiantes del DCC|06/05/2024|
+|jarriagada@dcc.uchile.cl|Se incorpora el checklist de entrega para sistemas desarrollados por estudiantes del DCC|06/05/2024|
 
 ## Contenidos
 
