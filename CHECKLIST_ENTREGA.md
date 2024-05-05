@@ -6,7 +6,7 @@
 
 ___
 
-###Supuestos
+### Supuestos
 
 - [ ] Confirmar que se han realizado pruebas exhaustivas de todas las funcionalidades del programa.
 - [ ] Confirmar que las pruebas abarcan todos los escenarios posibles y que se han corregido todos los errores identificados durante el proceso de prueba.
@@ -14,7 +14,7 @@ ___
 make precommit en el boilerplate.
 - [ ] Confirmar que el cliente y/o stakeholders han indicado que el sistema cumple con sus expectativas y requisitos.
 
-###Lista de requerimientos
+### Lista de requerimientos
 
 - [ ] Verificar que el archivo README.md incluye un título claro y descriptivo del proyecto.
 - [ ] Confirmar que el archivo README.md incluye un resumen conciso que describa qué hace el programa y para quién está destinado.
