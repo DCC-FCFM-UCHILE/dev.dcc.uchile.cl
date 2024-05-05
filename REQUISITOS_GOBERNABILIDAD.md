@@ -1,15 +1,16 @@
 # Requisitos de Gobernabilidad e Integración de Sistemas
 
-|Versión|Autor|Descripción|Fecha|
-|---|---|---|---|
-|1.0|sochoa@dcc.uchile.cl|versión inicial|Marzo 2022|
-|1.1|jarriagada@dcc.uchile.cl|reestructuración, revisión y actualización|Marzo 2023|
+|Versión|Autor|Descripción|
+|---|---|---|
+|22.03.1|sochoa@dcc.uchile.cl|versión inicial|
+|23.03.1|jarriagada@dcc.uchile.cl|reestructuración, revisión y actualización|
+|24.05.1|jarriagada@dcc.uchile.cl|revisión y actualización|
 
 ___
 
 ## Contenidos
 
-Para asegurar en gran medida la gobernabilidad de las aplicaciones y la integración entre ellas, cada sistema que se ponga en producción en el DCC debe incluir (al menos) lo siguiente:
+Para asegurar en gran medida la gobernabilidad de las aplicaciones y la integración entre ellas, se espera que cada sistema que se ponga en producción en el DCC debe incluiya al menos lo siguiente:
 
 - [Descripción del proceso que apoya](#descripción-del-proceso-que-apoya): incluye objetivo, actores, macro-tareas, workflow y dolores del proceso y sus posibles causas. El proceso debe describirse usando la nomenclatura BPMN.
 - [Objetivo y alcance del sistema](#objetivo-y-alcance-del-sistema): debe especificarse utilizando un tablero de alcance de productos.
@@ -35,9 +36,11 @@ ___
 
 ## Descripción del proceso que apoya
 
-Esto incluye el objetivo del proceso abordado, sus actores, las macro-tareas, el workflow del mismo, los dolores actuales del proceso (problemas a resolver u oportunidades a aprovechar) y sus eventuales causas. 
+Se debe incluir una descripción del proceso que apoya o problemática que resuelve, sus actores, las macro-tareas, el workflow del mismo, los dolores actuales del proceso (problemas a resolver u oportunidades a aprovechar) y sus eventuales causas. 
 
-El proceso debe describirse usando la nomenclatura [BPMN](https://www.bpmn.org/), si es éste es estructurado. Además, la descripción general del proceso debe especificarse a través de un tablero digital del tipo: “exploración del problema y contexto”, como el que se muestra a continuación.
+El proceso puede describirse usando la nomenclatura [BPMN](https://www.bpmn.org/), si es éste es estructurado. Además, la descripción general del proceso debe especificarse a través de un tablero digital del tipo: “exploración del problema y contexto”, como el que se muestra a continuación.
+
+También es posible documentar utilizando texto plano, utilizando diagramas que permitan mejorar la comprensión.
 
 ![Tablero Digital - Exploración del Problema y Contexto](imagenes/TableroDigital-Contexto.png)
 
@@ -49,11 +52,13 @@ ___
 
 ## Objetivo y alcance del sistema
 
-Esto debe especificarse utilizando un tablero digital de alcance de productos (tablero de scoping), como el que se muestra a continuación.
+Se debe incluir descripción del objetivo y el alcance del sistema. Esto puede especificarse utilizando un tablero digital de alcance de productos (tablero de scoping), como el que se muestra a continuación.
 
 ![Tablero Digital - Scoping](imagenes/TableroDigital-Scoping.png)
 
 Puedes utilizar la herramienta web [Tablero Digital](https://dcc-cc5401.herokuapp.com/), o utilizar las plantillas PDF para [Tableros de Scoping de Sistemas de Información](archivos/TableroScopingSistemasInformacion.pdf), o [Tableros de Scoping de Sistemas de Procesamiento Masivo de Datos](archivos/TableroScopingSistemasDatos.pdf).
+
+También es posible documentar utilizando texto plano, utilizando diagramas que permitan mejorar la comprensión.
 
 [<- Volver](#contenidos)
 
@@ -61,7 +66,7 @@ ___
 
 ## Arquitectura del ecosistema
 
-Se debe indicar la relación entre el sistema descrito, y otros sistemas (incluyendo bases de datos, colas de mensajería, etc.) con los que éste interactúa. La especificación de la  arquitectura del ecosistema debe hacerse utilizando modelos de contexto en [C4model](https://c4model.com/). 
+Se debe indicar la relación entre el sistema descrito, y otros sistemas (incluyendo bases de datos, colas de mensajería, etc.) con los que éste interactúa. La especificación de la  arquitectura del ecosistema puede hacerse utilizando modelos de contexto en [C4model](https://c4model.com/) u otros similares que permitan comprender la arquitectura del ecosistema.
 
 Esta especificación ayuda a entender la integración e interacción entre los distintos sistemas del DCC.
 
@@ -72,7 +77,7 @@ ___
 
 ## Arquitectura del software
 
-Esta arquitectura debe estar especificada utilizando modelos de Contenedores y Componentes de [C4model](https://c4model.com/).
+La arquitectura debe estar especificada; se recomienda utilizar modelos de Contenedores y Componentes de [C4model](https://c4model.com/)  u otros similares que permitan comprender la arquitectura del sistema.
 
 [<- Volver](#contenidos)
 
@@ -83,6 +88,8 @@ ___
 En casi todos los casos, el modelo de datos de los sistemas es relacional, por lo tanto, se espera que el modelo cuente con los elementos típicos y mandatorios de este tipo de especificación; es decir, un modelo basado en tablas, con relaciones y cardinalidades entre ellas. Además, para cada tabla debe indicarse la clave primaria, las claves foráneas (si las hay) y los atributos de dicha entidad de datos.
 
 En algunos casos, por ejemplo cuando existe un ORM que funciona como una capa de abstracción con la base de datos, el modelo de datos puede ser reemplazado por un modelo de Clases que muestre las clases principales del sistema y su relación con las clases propias del framework/librerías utilizado.
+
+Se recomienda utilizar alguna herramienta de modelado como MySQL Workbench o similar.
 
 [<- Volver](#contenidos)
 
